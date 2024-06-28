@@ -19,7 +19,7 @@ import { PublicKey, Keypair } from '@solana/web3.js';
 import bs58 from 'bs58';
 import { fromWeb3JsKeypair, fromWeb3JsPublicKey, toWeb3JsPublicKey } from '@metaplex-foundation/umi-web3js-adapters';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faTelegram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter, faTelegram, faTikTok, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 
 //TODO: configure environment variables
@@ -348,7 +348,7 @@ const HHMint: React.FC<HHMintProps> = ({ userPublicKey }) => {
       return null;
     }
     toast({
-      title: 'Your HeadlineHarmonies NFT is being minted!',
+      title: 'Your Paper is being minted!',
       description: 'As an owner of the collection you are now entitled to earn a 20% commission on all NFTs minted using your referral link.',
       status: 'success',
       duration: 15000,
@@ -365,10 +365,11 @@ const HHMint: React.FC<HHMintProps> = ({ userPublicKey }) => {
           wordWrap: 'break-word',
           textAlign: 'center',
         }}>
-      At the crossroads of art and technology lies a first-of-its-kind NFT collection where you can 
-      own a unique visual rendering of unfolding history. The combination of sublime imagery and the 
-      unfiltered hope and horror of our modern world converges with the power of generative AI to 
-      transform a headline into a piece of digital history.
+      Paperboy converts 
+      PaperBoy is a unique NFT collection that enables users to create and mint AI-generated artworks
+      based on headlines pulled from the Google News RSS Feed. Each artwork is a one-of-a-kind piece
+      generated using advanced AI algorithms, resulting in a diverse and dynamic collection of digital art.
+      Earn a 20% commission on any piece minted with your referral code(Once you mint a paper).
       </Text>
       
       {wallets.filter((wallet) => wallet.readyState === "Installed").length >
@@ -406,29 +407,26 @@ const HHMint: React.FC<HHMintProps> = ({ userPublicKey }) => {
       
       <footer style={{ textAlign: 'center', paddingTop: '20px' }}>
   <p style={{ marginBottom: '2px', fontWeight: 'bold', fontSize: '1rem', background: 'linear-gradient(to right, #9945FF, #14F195)', WebkitBackgroundClip: 'text',
-    WebkitTextFillColor: 'transparent' }}>HeadlineHarmonies</p>
+    WebkitTextFillColor: 'transparent' }}>PaperBoy</p>
   <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2px' }}>
-    <a href="https://x.com/thomasfdevito" target="_blank" rel="noopener noreferrer">
+    <a href="https://x.com/atl5d" target="_blank" rel="noopener noreferrer">
       <FontAwesomeIcon icon={faTwitter} style={{ margin: '0 10px', fontSize: '24px', color: 'white' }} />
-    </a>
-    <a href="https://github.com/gopulse-labs/hhmint" target="_blank" rel="noopener noreferrer">
-      <FontAwesomeIcon icon={faGithub} style={{ margin: '0 10px', fontSize: '24px', color: 'white' }} />
     </a>
   </div>
   <p style={{ marginTop: '20px', fontWeight: 'bold', fontSize: '1rem', background: 'linear-gradient(to right, #9945FF, #14F195)', WebkitBackgroundClip: 'text',
-    WebkitTextFillColor: 'transparent' }}>Presented by Thomas DeVito</p>
+    WebkitTextFillColor: 'transparent' }}>Made by TheWizardofHahz</p>
   <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2px' }}>
-    <a href="https://x.com/thomasfdevito" target="_blank" rel="noopener noreferrer">
+    <a href="https://x.com/thewizardofhahz" target="_blank" rel="noopener noreferrer">
       <FontAwesomeIcon icon={faTwitter} style={{ margin: '0 10px', fontSize: '24px', color: 'white' }} />
     </a>
-    <a href="https://telegram.com" target="_blank" rel="noopener noreferrer">
+    <a href="https://t.me/hahznft" target="_blank" rel="noopener noreferrer">
       <FontAwesomeIcon icon={faTelegram} style={{ margin: '0 10px', fontSize: '24px', color: 'white' }} />
     </a>
-    <a href="https://www.linkedin.com/in/tdevito" target="_blank" rel="noopener noreferrer">
-      <FontAwesomeIcon icon={faLinkedin} style={{ margin: '0 10px', fontSize: '24px', color: 'white' }} />
+    <a href="https://tiktok.com/@hahzcandy" target="_blank" rel="noopener noreferrer">
+      <FontAwesomeIcon icon={faTikTok} style={{ margin: '0 10px', fontSize: '24px', color: 'white' }} />
     </a>
-    <a href="https://github.com/tommyd2377" target="_blank" rel="noopener noreferrer">
-      <FontAwesomeIcon icon={faGithub} style={{ margin: '0 10px', fontSize: '24px', color: 'white' }} />
+    <a href="https://github.com/hahzcandy" target="_blank" rel="noopener noreferrer">
+      <FontAwesomeIcon icon={faInstagram} style={{ margin: '0 10px', fontSize: '24px', color: 'white' }} />
     </a>
   </div>
 </footer>
@@ -659,7 +657,7 @@ const HHMint: React.FC<HHMintProps> = ({ userPublicKey }) => {
   } else {
     console.error("ImageSrc is null");
   }
-}} bgGradient="linear(to-r, #9945FF, #14F195)">Mint your HeadlineHarmonies NFT</Button>
+}} bgGradient="linear(to-r, #9945FF, #14F195)">Mint your Paper</Button>
       
     </AccordionPanel>
   </AccordionItem>
@@ -671,29 +669,26 @@ const HHMint: React.FC<HHMintProps> = ({ userPublicKey }) => {
 
 <footer style={{ textAlign: 'center', paddingTop: '20px' }}>
   <p style={{ marginBottom: '2px', fontWeight: 'bold', fontSize: '1rem', background: 'linear-gradient(to right, #9945FF, #14F195)', WebkitBackgroundClip: 'text',
-    WebkitTextFillColor: 'transparent' }}>HeadlineHarmonies</p>
+    WebkitTextFillColor: 'transparent' }}>PaperBoy</p>
   <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2px' }}>
-    <a href="https://x.com/thomasfdevito" target="_blank" rel="noopener noreferrer">
+    <a href="https://x.com/atl5d" target="_blank" rel="noopener noreferrer">
       <FontAwesomeIcon icon={faTwitter} style={{ margin: '0 10px', fontSize: '24px', color: 'white' }} />
-    </a>
-    <a href="https://github.com/gopulse-labs/hhmint" target="_blank" rel="noopener noreferrer">
-      <FontAwesomeIcon icon={faGithub} style={{ margin: '0 10px', fontSize: '24px', color: 'white' }} />
     </a>
   </div>
   <p style={{ marginTop: '20px', fontWeight: 'bold', fontSize: '1rem', background: 'linear-gradient(to right, #9945FF, #14F195)', WebkitBackgroundClip: 'text',
-    WebkitTextFillColor: 'transparent' }}>Presented by Thomas DeVito</p>
+    WebkitTextFillColor: 'transparent' }}>Made by The Wizard of Hahz</p>
   <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2px' }}>
-    <a href="https://x.com/thomasfdevito" target="_blank" rel="noopener noreferrer">
+    <a href="https://x.com/thewizardofhahz" target="_blank" rel="noopener noreferrer">
       <FontAwesomeIcon icon={faTwitter} style={{ margin: '0 10px', fontSize: '24px', color: 'white' }} />
     </a>
-    <a href="https://telegram.com" target="_blank" rel="noopener noreferrer">
-      <FontAwesomeIcon icon={faTelegram} style={{ margin: '0 10px', fontSize: '24px', color: 'white' }} />
+    <a href="https://t.me/hahznft" target="_blank" rel="noopener noreferrer">
+      <FontAwesomeIcon icon={faTikTok} style={{ margin: '0 10px', fontSize: '24px', color: 'white' }} />
     </a>
-    <a href="https://www.linkedin.com/in/tdevito" target="_blank" rel="noopener noreferrer">
-      <FontAwesomeIcon icon={faLinkedin} style={{ margin: '0 10px', fontSize: '24px', color: 'white' }} />
+    <a href="https://tiktok.com/@hahzcandy" target="_blank" rel="noopener noreferrer">
+      <FontAwesomeIcon icon={faTikTok} style={{ margin: '0 10px', fontSize: '24px', color: 'white' }} />
     </a>
-    <a href="https://github.com/tommyd2377" target="_blank" rel="noopener noreferrer">
-      <FontAwesomeIcon icon={faGithub} style={{ margin: '0 10px', fontSize: '24px', color: 'white' }} />
+    <a href="https://instagram.com/hahzcandy" target="_blank" rel="noopener noreferrer">
+      <FontAwesomeIcon icon={faInstagram} style={{ margin: '0 10px', fontSize: '24px', color: 'white' }} />
     </a>
   </div>
 </footer>
